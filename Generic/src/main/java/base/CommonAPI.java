@@ -51,7 +51,7 @@ public class CommonAPI {
     @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false")String cloudEnvName,
                       @Optional("Windows") String os, @Optional("10") String os_version, @Optional("chrome") String browserName, @Optional("60")
-                              String browserVersion, @Optional("www.hbo.com") String url)throws IOException { ////need to change to yours url
+                              String browserVersion, @Optional("https://www.uhc.com/") String url)throws IOException { ////need to change to yours url
 
         System.setProperty("webdriver.chrome.driver","../Generic/browserDriver/chromedriver");
         if(useCloudEnv==true){
