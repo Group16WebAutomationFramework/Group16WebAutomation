@@ -5,87 +5,84 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import reporting.TestLogger;
 
-
-
 //***********The following webelement and methods are for demo **************
-
-
 public class MainPage extends BaseUtil {
+    @FindBy(xpath ="//*[@id='citiBrandingNav']" )
+    public static WebElement searchCitiLogo;
+    @FindBy(xpath = "//a[text()='ATM / Branch']")
+    public static WebElement searchAtmBranch;
+    @FindBy (xpath = "//a[text()='Open an Account']")
+    public static WebElement searchOpenAccount;
+    @FindBy (xpath = "//a[text()='Español']")
+    public static WebElement searchEspanol;
+    @FindBy(xpath ="//a[text()='Banking']" )
+    public static WebElement searchBanking;
+    @FindBy (xpath = "//a[@href='https://www.citi.com/credit-cards/citi.action']")
+    public static WebElement searchCreditCards;
+    @FindBy(xpath = "//*[@id='creditCards']")
+    public static WebElement searchLending;
+    @FindBy(xpath ="//a[text()='Investing']")
+    public static WebElement searchInvesting;
+    @FindBy(xpath ="//*[@id='citiGold']")
+    public static WebElement searchCitigold;
+   // @FindBy(xpath = "//*[@class='hero-xs-background']")
+   // public static WebElement searchHeroBackground;
+//    @FindBy(xpath ="//a[@href='https://banking.citi.com/cbol/18/Q4/split/nt/default.htm?channel=onsite&intc=1~1~52~6~BANR~2~Q119Save_PROS~XPX']")
+//    public static WebElement searchLearnMoreSavingAccount;
 
-
-    @FindBy(xpath = "//img[@alt='Mount Sinai']")
-    public static WebElement logo;
-
-
-
-    @FindBy(linkText = "Find a Doctor")
-    public static WebElement findADoctor;
-    @FindBy(id = "hploc__sel-text-hosp")
-    public static WebElement selectHospitals1;
-    @FindBy(xpath = "//h3[contains(text(),'300+ Community Locations')]")
-    public static WebElement communityLocations300Plus;
-    @FindBy(xpath = "//span[contains(text(),'You can access Mount Sinai health care across New York City and beyond')]")
-    public static WebElement captionOfSymbolOfMap;
-    @FindBy(xpath = "//div[@class='nav navbar col-xs-12']//a[text()='Inside Mount Sinai Blog']")
-    public static WebElement insideMountSinaiBlog;
-    @FindBy(xpath = "//i[@class='fa fa-linkedin']")
-    public static WebElement blogInLinkedIn;
-    @FindBy(xpath = "//div[@class='nav col-xs-12 col-sm-4']//a[contains(text(),'International Services')]")
-    public static WebElement internationalServices;
-    @FindBy(xpath = "//div[@class='nav col-xs-12 col-sm-4']//a[text()='Find a Doctor']")
-    public static WebElement findADoctor3;
-
-
-
-    public void checkLogo() {
+    public void checkSearchCitiLogo() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        logo.click();
+        searchCitiLogo.click();
     }
-
-
-
-
-
-    public void checkFindADoctor() {
+    public void checkSearchAtmBranch() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        findADoctor.click();
+        searchAtmBranch.click();
     }
-    public void checkSelectHospitals1() {
+    public void checkSearchOpenAccount() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        selectHospitals1.click();
+        searchOpenAccount.click();
     }
-    public void checkCommunityLocations300Plus() {
+    public void checkSearchEspanol() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        communityLocations300Plus.click();
+        searchEspanol.click();
     }
-    public void checkCaptionOfSymbolOfMap() {
+    public void checkSearchBanking() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        captionOfSymbolOfMap.click();
+        searchBanking.click();
     }
-    public void checkInsideMountSinaiBlog() {
+    public void checkSearchCreditcards() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        insideMountSinaiBlog.click();
+        searchCreditCards.click();
     }
-    public void checkBlogInLinkedIn() {
+    public void checkSearchLending() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        blogInLinkedIn.click();
+        searchLending.click();
     }
-    public void checkInternationalServices() {
+    public void checkSearchInvesting() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        internationalServices.click();
+        searchInvesting.click();
     }
-    public void checkFindADoctor3() {
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+    public void checkSearchCitigolg(){
+        TestLogger.log(getClass().getSimpleName() +": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        findADoctor3.click();
+        searchCitigold.click();
     }
-
+//    public void checkSearchHeroBackground(){
+//        TestLogger.log(getClass().getSimpleName() +": " + convertToString(new Object() {
+//        }.getClass().getEnclosingMethod().getName()));
+//        searchHeroBackground.click();
+//    }
+//    public void checkSearchLearnMoreSavingAccount(){
+//        TestLogger.log(getClass().getSimpleName() +": " + convertToString(new Object() {
+//        }.getClass().getEnclosingMethod().getName()));
+//        searchLearnMoreSavingAccount.click();
+//    }
 }

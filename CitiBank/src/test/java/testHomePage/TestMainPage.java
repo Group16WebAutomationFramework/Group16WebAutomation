@@ -9,7 +9,6 @@ import reporting.TestLogger;
 //***********The following webelement and methods are for demo **************
 
 public class TestMainPage extends MainPage {
-
     MainPage mainPage;
     @BeforeMethod
     public void initialize() {
@@ -18,51 +17,60 @@ public class TestMainPage extends MainPage {
         mainPage = PageFactory.initElements(driver, MainPage.class);
     }
     @Test
-    public void testLogo(){
+    public void testCheckSearchCitiLogo(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        mainPage.checkLogo();
+        mainPage.checkSearchCitiLogo();
     }
     @Test
-    public void testFindADoctor(){
+    public void testSearchAtmBranch(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        mainPage.checkFindADoctor();
+        mainPage.checkSearchAtmBranch();
     }
+
     @Test
-    public void testCommunityLocations300Plus(){
+    public void testSearchOpenAccount(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        mainPage.checkCommunityLocations300Plus();
+        mainPage.checkSearchOpenAccount();
     }
     @Test
-    public void testCaptionOfSymbolOfMap() {
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
-        mainPage.checkCaptionOfSymbolOfMap();
+    public void testsSearchEspanol(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchEspanol();
     }
     @Test
-    public void testInsideMountSinaiBlog() {
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
-        mainPage.checkInsideMountSinaiBlog();
+    public void testSearchBanking(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchBanking();
     }
     @Test
-    public void testBlogInLinkedIn() {
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
-        mainPage.checkBlogInLinkedIn();
+    public void testSearchCreditCards(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchCreditcards();
     }
-
-
-
     @Test
-    public void testInternationalServices() {
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
-        mainPage.checkInternationalServices();
+    public void testSearchLendingt(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchLending();
     }
-
-
-
-
-
     @Test
-    public void testFindADoctor3() {
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
-        mainPage.checkFindADoctor3();
+    public void testSearchInvesting(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchInvesting();
     }
+    @Test
+    public void testSearchCitigold(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchCitigolg();
+    }
+//    @Test
+//    public void testSearchHeroBackground(){
+//        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+//        mainPage.checkSearchHeroBackground();
+//    }
+//    @Test
+//    public void testSearchLearnMoreSavingAccount(){
+//        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+//        mainPage.checkSearchLearnMoreSavingAccount();
+//    }
+
 }
