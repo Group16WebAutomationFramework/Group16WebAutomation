@@ -18,166 +18,165 @@ public class MainPage extends CommonAPI {
    @FindBy(xpath = " //a[text()='Home']")
    public static WebElement checkHome;//pass
    @FindBy(xpath = " //a[text()='Individuals & Families']")
-   public static WebElement searchIndividualFamilies;//pass
+   public static WebElement searchIndividualFamilies;
    @FindBy(xpath = " //a[text()='Employers']")
-   public static WebElement searchEmployers;//pass
+   public static WebElement searchEmployers;
    @FindBy(xpath = " //a[text()='Medicare'] ")
-   public static WebElement medicareHpmePage;//pass
+   public static WebElement medicareHpmePage;
    @FindBy(xpath = " //a[text()='Find a Doctor ']")
-   public static WebElement searchFindDoctor;//pass
-   @FindBy(xpath = " //span[text()='Sign in to myuhc.com']")//need help to create better xpath
-   public static WebElement searchSignNyuhc;//pass
-   @FindBy(xpath = " //span[text()='Find Plans']")//need help to create better xpath
-   public static WebElement searchFindPlan;//psss
-   @FindBy(xpath = " //span[text()='Learn More']")//need help to create better xpath
-   public static WebElement searchLearnMore;//pass
+   public static WebElement searchFindDoctor;
+   @FindBy(xpath = " //span[text()='Sign in to myuhc.com']")
+   public static WebElement searchSignNyuhc;
+   @FindBy(xpath = " //span[text()='Find Plans']")
+   public static WebElement searchFindPlan;
+   @FindBy(xpath = " //span[text()='Learn More']")
+   public static WebElement searchLearnMore;
    @FindBy(xpath = " //b[text()='Insurance Plans and Products']")
-   public static WebElement searchTxtPlan;//pass
+   public static WebElement searchTxtPlan;
    @FindBy(xpath = " //a[text()='individuals']")
-   public static WebElement searchIndividualsLink;//pass
+   public static WebElement searchIndividualsLink;
    @FindBy(xpath = " //a[text()='employers']")
-   public static WebElement searchLinkEmployeeers;//psss
+   public static WebElement searchLinkEmployeeers;
    @FindBy(xpath = " //h3[text()='Medicare Plans']")
-   public static WebElement searchMedicarePlan;//pass
-   @FindBy(xpath = " //img[@style='margin-bottom: 2em;']")// need to create bette xpath
-   public static WebElement searchPartABCD;//pass
-   @FindBy(xpath = " //a[@aria-label='Learn more on our Medicare page']")//need to create better xpath
-   public static WebElement searchLearnMoreMedicare;//pass
-   @FindBy(xpath = "//img[@src='/content/dam/uhcdotcom/en/Common/Images/Small-Business-90.jpg']")//need to discus about this xpath
-   public static WebElement searchSmallBusinessLogo;//pass
+   public static WebElement searchMedicarePlan;
+   @FindBy(xpath = " //img[@style='margin-bottom: 2em;']")
+   public static WebElement searchPartABCD;
+   @FindBy(xpath = " //a[@aria-label='Learn more on our Medicare page']")
+   public static WebElement searchLearnMoreMedicare;
+   @FindBy(xpath = "//img[@src='/content/dam/uhcdotcom/en/Common/Images/Small-Business-90.jpg']")
+   public static WebElement searchSmallBusinessLogo;
    @FindBy(xpath = "//h3[text()='Small Business Plans']")
-   public static WebElement txtSmallBusinessPlan;//pass
-   @FindBy(xpath = "//a[@aria-label='Health Insurance for Small Business']")// need to discus better xptah
-   public static WebElement searchLearnMoreSmallBusiness;//pass
+   public static WebElement txtSmallBusinessPlan;
+   @FindBy(xpath = "//a[@aria-label='Health Insurance for Small Business']")
+   public static WebElement searchLearnMoreSmallBusiness;
    @FindBy(xpath = "//h3[text()='Individual & Family Plans']")
-   public static WebElement individualFamilyPlan;//pass
-   @FindBy(xpath = "//a[@aria-label='Learn More on Individual and Families']")// not a good xpath
-   public static WebElement learnMoreIndividualFamilyPlan;//pass
+   public static WebElement individualFamilyPlan;
+   @FindBy(xpath = "//a[@aria-label='Learn More on Individual and Families']")
+   public static WebElement learnMoreIndividualFamilyPlan;
    @FindBy(xpath = "//a[@aria-label='View plans on UHOne.com (opens in a new window)']")
-   public static WebElement getLearnMoreIndividualFamilyPlan;//pass
-   @FindBy(xpath = "//*[@id=\"plans-and-prods\"]/div/div[3]/div/div/div[1]/div/div/div/div/div/div[2]/p[2]/a[2]") //need to work on xpath
-   public static WebElement viewIndividualFamilyPlan;//pass
-   @FindBy(xpath = "//*[@id=\"plans-and-prods\"]/div/div[3]/div/div/div[2]/div/div/div/div/div/div[1]/img")
-   public static WebElement checkDentalImage;//pass
+   public static WebElement getLearnMoreIndividualFamilyPlan;
+   @FindBy(xpath = "//h3[text()='Individual & Famil")
+   public static WebElement viewIndividualFamilyPlan;//fail
+   @FindBy(xpath = "//img[@src='/content/dam/uhcdotcom/en/Common/Images/Dental-Insurance-90.jpg']")
+   public static WebElement checkDentalImage;
     @FindBy(xpath = "//img[@src='/content/dam/uhcdotcom/en/Common/Images/Dental-Insurance-90.jpg']")
-    public static WebElement dentalImage;//pass
+    public static WebElement dentalImage;
    @FindBy(xpath = "//h3[text()='Dental Plans']")
-   public static WebElement textDentalPlan;//pass
-   @FindBy(xpath = "//a[@aria-label='Learn More about Dental Plans']")// not right xpath
-   public static WebElement learnAboutDentalPlan;//pass
+   public static WebElement textDentalPlan;
+   @FindBy(xpath = "//a[@aria-label='Learn More about Dental Plans']")
+   public static WebElement learnAboutDentalPlan;
    @FindBy(xpath = "//a[@aria-label='View Dental plans on UHOne.com (opens in a new window)']")
-   public static WebElement viewDentalPlan;//pass
+   public static WebElement viewDentalPlan;
    @FindBy(xpath = "//a[text()='Short Term Health Insurance']")
-   public static WebElement shortTermHealthInsurace;//pass
+   public static WebElement shortTermHealthInsurace;
    @FindBy(xpath = "//a[@aria-label='Learn More on Short-Term Health Insurance']")
-   public static WebElement learnShortTermHealthInsurance;//pass
+   public static WebElement learnShortTermHealthInsurance;
    @FindBy(xpath = "//a[@aria-label='View Short-Term Health Insurance Plans on UHOne.com (opens in a new window)']")
-   public static WebElement viewShortTermHelathInsrurce;//pass
+   public static WebElement viewShortTermHelathInsrurce;
    @FindBy(xpath = "//h3[text()='Medicaid Plans']")
-   public static WebElement txtMedicaidPlan;//pass
+   public static WebElement txtMedicaidPlan;
    @FindBy(xpath = "//a[@aria-label='Learn more about Medicaid (opens in a new window)']")
-   public static WebElement learnAboutMedicaidPlan;//pass
+   public static WebElement learnAboutMedicaidPlan;
    @FindBy(xpath = "//h2[text()=' Additional Insurance Plans and Products']")
-   public static WebElement additionalInsurancePlan;//pass
+   public static WebElement additionalInsurancePlan;
    @FindBy(xpath = "//a[text()='Hospital and Doctor Insurance']")
-   public static WebElement txtHospitalDoctorInsurance;//Pass
+   public static WebElement txtHospitalDoctorInsurance;
    @FindBy(xpath = "//a[@href='/individual-and-family/insurance-plans/critical-illness']")
-   public static WebElement criticalIllnessInsurance;//pass
+   public static WebElement criticalIllnessInsurance;
    @FindBy(xpath = "//a[text()='Supplemental Insurance']")
-   public static WebElement supplementalInsurance;//pass
+   public static WebElement supplementalInsurance;
    @FindBy(xpath = "//a[text()='Vision Insurance']")
-   public static WebElement visionInsurance;//pass
+   public static WebElement visionInsurance;
    @FindBy(xpath = "//a[text()='Accident Insurance']")
-   public static WebElement accidentInsurance;//pass
+   public static WebElement accidentInsurance;
    @FindBy(xpath = "//a[@href='https://www.uhcglobal.com/']")
-   public static WebElement globalInsurance;//pass
+   public static WebElement globalInsurance;
    @FindBy(xpath = "//a[text()='Term Life Insurance']")
-   public static WebElement termLifeInsurance;// pass
+   public static WebElement termLifeInsurance;
    @FindBy(xpath = "//a[text()='Hospitalization Insurance']")
-   public static WebElement hospitilazationInsurance;//pass
+   public static WebElement hospitilazationInsurance;
    @FindBy(xpath = "//a[text()='Global Travel Insurance']")
-   public static WebElement globalTravelInurance;//pass
+   public static WebElement globalTravelInurance;
    @FindBy(xpath = "//a[text()='View Broker Resources']")
-   public static WebElement viewBrokerResources;//pass
+   public static WebElement viewBrokerResources;
    @FindBy(xpath = "//h2[text()='Flu Vaccine Information']")
-   public static WebElement flueVaccineInformation;//pass
+   public static WebElement flueVaccineInformation;
    @FindBy(xpath = "//a[@aria-label='Find a nearby clinic for flu shots']")
-   public static WebElement findNearByClinid;//pass
+   public static WebElement findNearByClinid;
    @FindBy(xpath = "//h2[text()=' Popular Links']")
-   public static WebElement searchPopularLink;//pass
+   public static WebElement searchPopularLink;
    @FindBy(xpath = "//h3[text()='Products']")
-   public static WebElement searchProducts;//pass
+   public static WebElement searchProducts;
    @FindBy(xpath = "//a[text()='Marketplace Insurance Plans']")
-   public static WebElement searchMarketPlaceInsurance;//pass
+   public static WebElement searchMarketPlaceInsurance;
    @FindBy(xpath = "//a[@href='https://www.aarpmedicareplans.com/?WT.mc_id=880332']")
-   public static WebElement medicareUnderPopularLink;//pass
+   public static WebElement medicareUnderPopularLink;
    @FindBy(xpath = "//a[@href='/individual-and-family/health-insurance-plans/medicare-medicaid/what-is-medicaid']")
-   public static WebElement medicaidUnderPopularLink;//pass
+   public static WebElement medicaidUnderPopularLink;//fail
    @FindBy(xpath = "//a[text()='Employer Group Plans']")
-   public static WebElement employerGroupPlan;//pass
+   public static WebElement employerGroupPlan;
    @FindBy(xpath = "//a[text()='Dental Insurance']")
-   public static WebElement dentalInsurance;//pass
-   @FindBy(xpath = "//div[@class='rte-content ']//a[text()='Vision Insurance']")// practice it more
-   public static WebElement visonInsurance;//pass
+   public static WebElement dentalInsurance;
+   @FindBy(xpath = "//div[@class='rte-content ']//a[text()='Vision Insurance']")
+   public static WebElement visonInsurance;
    @FindBy(xpath = "//a[text()='Short Term Health Insurance']")
-   public static WebElement shortTremHealthInurance;//pass
+   public static WebElement shortTremHealthInurance;
    @FindBy(xpath = "//h3[text()='Healthy Living']")
-   public static WebElement healthyLeaving;//pass
+   public static WebElement healthyLeaving;
    @FindBy(xpath = "//a[text()='Fitness']")
-   public static WebElement fitnessUnderHelthyLiving;//pass
+   public static WebElement fitnessUnderHelthyLiving;
    @FindBy(xpath = "//a[text()='Nutrition']")
-   public static WebElement searchNutrition;//pass
+   public static WebElement searchNutrition;
    @FindBy(xpath = "//a[text()='Health Topics']")
-   public static WebElement healthTopics;//pass
+   public static WebElement healthTopics;
    @FindBy(xpath = "//a[text()='Take Control of Your Care']")
-   public static WebElement takeControlyYourCare;//pass
+   public static WebElement takeControlyYourCare;
    @FindBy(xpath = "//a[text()='Health and Wellness']")
-   public static WebElement healthAndWellness;//pass
+   public static WebElement healthAndWellness;
    @FindBy(xpath = "//a[text()='Programs & Tools']")
-   public static WebElement programAndTools;//pass
+   public static WebElement programAndTools;
    @FindBy(xpath = "//h3[text()='Featured Links']")
-   public static WebElement txtFeaturedLinks;//pass
+   public static WebElement txtFeaturedLinks;
    @FindBy(xpath = "//a[text()='Open Enrollment']")
-   public static WebElement openEnrollments;//pass
+   public static WebElement openEnrollments;
    @FindBy(xpath = "//a[text()='Member Resources']")
-   public static WebElement memberResources;//pass
+   public static WebElement memberResources;
    @FindBy(xpath = "//a[text()='About Us']")
-   public static WebElement searchAboutUs;//pass
+   public static WebElement searchAboutUs;
    @FindBy(xpath = "//a[text()='United For Reform']")
-   public static WebElement unitedForReform;//pass
+   public static WebElement unitedForReform;
    @FindBy(xpath = "//a[text()='Value-Based Care']")
-   public static WebElement valueBasedCare;//pass
+   public static WebElement valueBasedCare;
    @FindBy(xpath = "//a[text()='View Drug List']")
-   public static WebElement viewDrugList;//pass
+   public static WebElement viewDrugList;
    @FindBy(xpath = "//a[text()='Download Health4Me App']")
-   public static WebElement downloadHealth4MeApp;//pass
+   public static WebElement downloadHealth4MeApp;
    @FindBy(xpath = "//a[text()='Broker Resources']")
-   public static WebElement brokerResources;//pass
+   public static WebElement brokerResources;
    @FindBy(xpath = "//h3[text()='Member Services']")
-   public static WebElement memberServices;//pass
+   public static WebElement memberServices;
    @FindBy(xpath = "//a[text()='Language Assistance/ Nondiscrimination Notice']")
-   public static WebElement languageAssistantNotice;//pass
+   public static WebElement languageAssistantNotice;
    @FindBy(xpath = "//a[text()='Asistencia de Idiomas / Aviso de no Discriminación']")
-   public static WebElement txtAsistanceDeIdiomas;//pass
+   public static WebElement txtAsistanceDeIdiomas;
    @FindBy(xpath = "//a[text()='Find a Doctor']")
-   public static WebElement findAdoctor;//pass
+   public static WebElement findAdoctor;
    @FindBy(xpath = "//a[text()='View Claim/Account']")
-   public static WebElement viewClaimAccounts;//pass
+   public static WebElement viewClaimAccounts;
    @FindBy(xpath = "//a[text()='Check Benefits']")
-   public static WebElement checkBenefits;//pass
+   public static WebElement checkBenefits;
   @FindBy(xpath = "//a[@href='https://newsroom.uhc.com']")
   public static WebElement newsRoomUhc;
   @FindBy(xpath = "//a[@title='Contact Us']")
-  public static WebElement contactUs;//passed
+  public static WebElement contactUs;
   @FindBy(xpath = "//a[@title='Careers']")
   public static WebElement careersUhc;
-  @FindBy(xpath = "//iframe[@id='artEXPOiFrame' and @name='CustomerFeedbackSurvey']") //we can also add text and id/class/name together
-  public static WebElement howWasYourVisit;
+  @FindBy(xpath = "//iframe[@id='artEXPOiFrame' and @name='CustomerFeedbackSurvey']")
+  public static WebElement howWasYourVisit;//fail
     public void checkLogo() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         logo.click();
     }
-
     public void checkMedicarr() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
@@ -594,6 +593,4 @@ public class MainPage extends CommonAPI {
         }.getClass().getEnclosingMethod().getName()));
             howWasYourVisit.click();
     }
-
-
 }

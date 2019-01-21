@@ -45,6 +45,7 @@ public class CommonAPI {
     public String browserstack_accesskey = "";
     public String saucelabs_username = "";
     public String saucelabs_accesskey = "";
+    public String URL = null;
 
     @Parameters({"useCloudEnv","cloudEnvName","os","os_version","browserName","browserVersion","url"})
 
@@ -53,23 +54,28 @@ public class CommonAPI {
                       @Optional("Windows") String os, @Optional("10") String os_version, @Optional("chrome") String browserName, @Optional("60")
                               String browserVersion, @Optional("https://www.uhc.com/") String url)throws IOException { ////need to change to yours url
 
-        System.setProperty("webdriver.chrome.driver","../Generic/browserDriver/chromedriver");
-        if(useCloudEnv==true){
-            if(cloudEnvName.equalsIgnoreCase("browserstack")) {
-                getCloudDriver(cloudEnvName,browserstack_username,browserstack_accesskey,os,os_version, browserName, browserVersion);
-            }else if (cloudEnvName.equalsIgnoreCase("saucelabs")){
-                getCloudDriver(cloudEnvName,saucelabs_username, saucelabs_accesskey,os,os_version, browserName, browserVersion);
+        System.setProperty("webdriver.chrome.driver", "../Generic/browserDriver/chromedriver");
+        if (useCloudEnv == true) {
+            if (cloudEnvName.equalsIgnoreCase("browserstack")) {
+                getCloudDriver(cloudEnvName, browserstack_username, browserstack_accesskey, os, os_version, browserName, browserVersion);
+            } else if (cloudEnvName.equalsIgnoreCase("saucelabs")) {
+                getCloudDriver(cloudEnvName, saucelabs_username, saucelabs_accesskey, os, os_version, browserName, browserVersion);
             }
-        }else{
+        } else {
             getLocalDriver(os, browserName);
         }
-        wait = new WebDriverWait(driver,10);
+        wait = new WebDriverWait(driver, 10);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.get(url);
         //driver.manage().window().maximize();
-
     }
+        @Parameters
+                public void setURL(String URL){
+            this.URL=URL;
+            driver.get(URL);
+        }
+
     public WebDriver getLocalDriver(@Optional("OS X") String OS, String browserName){
         if(browserName.equalsIgnoreCase("chrome")){
             if(OS.equalsIgnoreCase("OS X")){

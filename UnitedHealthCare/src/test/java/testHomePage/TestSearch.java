@@ -1,6 +1,4 @@
 package testHomePage;
-
-import base.CommonAPI;
 import homePage.Search;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
@@ -25,9 +23,4 @@ public class TestSearch extends Search {
         TestLogger.log((getClass().getSimpleName()+":"+ convertToString(new Object(){}.getClass().getEnclosingMethod().getName())));
         setBtnClick();
     }
-//    @Test
-//    public void tesSrchClickOnSearchResult(){
-//        TestLogger.log(getClass().getSimpleName()+":"+convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-//        srchClickOnSearchResult();
-//    }
 }
