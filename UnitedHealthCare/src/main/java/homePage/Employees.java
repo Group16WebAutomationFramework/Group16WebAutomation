@@ -2,6 +2,7 @@ package homePage;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.annotations.Test;
 import reporting.TestLogger;
 public class Employees extends CommonAPI {
     @FindBy(xpath = "//a[text()='Employers']")
@@ -30,12 +31,20 @@ public class Employees extends CommonAPI {
     public static WebElement numberOfElegableEmployees;
     @FindBy(xpath = "//input[@name='RENEWAL_DATE']")
     public static WebElement enterRenewalDate;
-    @FindBy(xpath = "//input[@name='MEDICAL_INSURANCE']")
+    @FindBy(xpath = "//select[@name='DECISION_ROLE']")
+    public static WebElement iamtheHelthPlan;
+    @FindBy(xpath = "//option[text()='Decision-maker' and @id='DECISION_ROLE650360']")
+    public static WebElement decisionMaker; //dropdown list
+    @FindBy(xpath = "//input[@type='checkbox' and @name='MEDICAL_INSURANCE']")
     public static WebElement checkMedical;
-    @FindBy(xpath = "//input[@name='DISPOSITION_CODE']")
+    @FindBy(xpath = "//input[@id='DISPOSITION_CODE650433' and @name='DISPOSITION_CODE']")
     public static WebElement clickOnDiscussCode;
+    @FindBy(xpath = "//select[@name='INSURANCE_CARRIER' and @id='form_element_170898']")
+    public static WebElement currentMedicalBenefit; //DropDown list
+    @FindBy(xpath = "//option[text()='Oxford Health Plans' and @id='INSURANCE_CARRIER650427']")
+    public static WebElement selectOxfordInsurance;
     @FindBy(xpath = "//input[@id='BROKER_UTILIZED650362']")
-    public static WebElement doYouWorkWithBroker;
+    public static WebElement yesWorkWithBroker;
     @FindBy(xpath = "//input[@name='BROKER_NAME']")
     public static WebElement enterBrokerName;
     @FindBy(xpath = "//input[@name='BROKER_AGENCY_NAME']")
@@ -67,9 +76,16 @@ public class Employees extends CommonAPI {
         enterNumberOfEmployees.sendKeys("25");
         numberOfElegableEmployees.sendKeys("20");
         enterRenewalDate.sendKeys("12");
+        iamtheHelthPlan.click();
+        decisionMaker.click();//dropsown menu
+        checkMedical.click();
+        clickOnDiscussCode.click();
+        currentMedicalBenefit.click();
+        selectOxfordInsurance.click();//dropdownMenu
+        yesWorkWithBroker.click();
         enterBrokerName.sendKeys("Gold Smith");
         enterBrokerAgencyName.sendKeys("ABCD");
         enterAdditionalInformation.sendKeys("He does not have antything");
-        clickSubmitButton.click();
+        //clickSubmitButton.click();
    }
 }
