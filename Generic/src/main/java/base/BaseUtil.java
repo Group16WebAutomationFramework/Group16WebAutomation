@@ -45,13 +45,14 @@ public class BaseUtil {
     public String browserstack_accesskey = "";
     public String saucelabs_username = "";
     public String saucelabs_accesskey = "";
+    public String URL = null;
 
     @Parameters({"useCloudEnv","cloudEnvName","os","os_version","browserName","browserVersion","url"})
 
     @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false")String cloudEnvName,
                       @Optional("OS X") String os, @Optional("10") String os_version, @Optional("chrome") String browserName, @Optional("60")
-                              String browserVersion, @Optional("http://www.mountsinai.org") String url)throws IOException { //need to change to your url
+                              String browserVersion, @Optional("https://online.citi.com/US/login.do") String url)throws IOException { //need to change to your url
 
         System.setProperty("webdriver.chrome.driver","../Generic/browserDriver/chromedriver");
         if(useCloudEnv==true){
@@ -70,6 +71,11 @@ public class BaseUtil {
         //driver.manage().window().maximize();
 
     }
+//    @Parameters
+//    public void setURL(String URL){
+//        this.URL =URL;
+//        driver.get(URL);
+//    }
     public WebDriver getLocalDriver(@Optional("OS X") String OS, String browserName){
         if(browserName.equalsIgnoreCase("chrome")){
             if(OS.equalsIgnoreCase("OS X")){
@@ -106,6 +112,7 @@ public class BaseUtil {
         return driver;
 
     }
+
     public WebDriver getCloudDriver(String envName,String envUsername, String envAccessKey,String os, String os_version,String browserName,
                                     String browserVersion)throws IOException {
         DesiredCapabilities cap = new DesiredCapabilities();
