@@ -17,6 +17,14 @@ public class MainPage extends BaseUtil{
     public static WebElement searchEspanol;
     @FindBy(xpath ="//a[text()='Banking']" )
     public static WebElement searchBanking;
+    @FindBy(xpath = "//select[@id='stateSelectorSelectId' and @class='form-control']")
+    public static WebElement dropDown;
+    @FindBy(xpath = "//option[text()='NY']")
+    public static WebElement selectState;
+    @FindBy(xpath = "//button[@class='btn btn-primary select-btn__e-2']")
+    public static WebElement selectButton;
+
+
     @FindBy (xpath = "//a[@href='https://www.citi.com/credit-cards/citi.action']")
     public static WebElement searchCreditCards;
     @FindBy(xpath = "//*[@id='creditCards']")
@@ -88,6 +96,24 @@ public class MainPage extends BaseUtil{
         }.getClass().getEnclosingMethod().getName()));
         searchBanking.click();
     }
+    public void checkDropDown() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
+        dropDown.click();
+    }
+    public void checkSelectState() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
+        selectState.click();
+    }
+    public void checkSelectButton() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
+        selectButton.click();
+    }
+
+
+
     public void checkSearchCreditcards() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));

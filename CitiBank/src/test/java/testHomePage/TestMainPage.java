@@ -43,6 +43,21 @@ public class TestMainPage extends MainPage {
         mainPage.checkSearchBanking();
     }
     @Test
+    public void testCheckdropDown(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkDropDown();
+    }
+    @Test
+    public void testCheckSelectState(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSelectState();
+    }
+    @Test
+    public void testCheckSelectButton(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSelectButton();
+    }
+    @Test
     public void testSearchCreditCards(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         mainPage.checkSearchCreditcards();

@@ -71,11 +71,11 @@ public class BaseUtil {
         //driver.manage().window().maximize();
 
     }
-//    @Parameters
-//    public void setURL(String URL){
-//        this.URL =URL;
-//        driver.get(URL);
-//    }
+    @Parameters
+    public void setURL(String URL){
+        this.URL =URL;
+        driver.get(URL);
+    }
     public WebDriver getLocalDriver(@Optional("OS X") String OS, String browserName){
         if(browserName.equalsIgnoreCase("chrome")){
             if(OS.equalsIgnoreCase("OS X")){
