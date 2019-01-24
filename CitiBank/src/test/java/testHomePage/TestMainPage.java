@@ -43,7 +43,7 @@ public class TestMainPage extends MainPage {
         mainPage.checkSearchBanking();
     }
     @Test
-    public void testCheckdropDown(){
+    public void testCheckDropDown(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         mainPage.checkDropDown();
     }
@@ -63,7 +63,7 @@ public class TestMainPage extends MainPage {
         mainPage.checkSearchCreditcards();
     }
     @Test
-    public void testSearchLendingt(){
+    public void testSearchLending(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         mainPage.checkSearchLending();
     }
@@ -73,19 +73,89 @@ public class TestMainPage extends MainPage {
         mainPage.checkSearchInvesting();
     }
     @Test
-    public void testSearchCitigold(){
+    public void testSearchCitiGold(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        mainPage.checkSearchCitigolg();
+        mainPage.checkSearchCitigold();
     }
-//    @Test
-//    public void testSearchHeroBackground(){
-//        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-//        mainPage.checkSearchHeroBackground();
-//    }
-//    @Test
-//    public void testSearchLearnMoreSavingAccount(){
-//        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-//        mainPage.checkSearchLearnMoreSavingAccount();
-//    }
+    @Test
+    public void testSearchInputUserId(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchInputUserId();
+    }
+    @Test
+    public void testSearchPassword(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchInputPassword();
+    }
+    @Test
+    public void testSearchCheckBoxRemember(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchCheckBoxRemember();
+    }
+    @Test
+    public void testSearchSignOnButton(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchSignOnButton();
+    }
+    @Test
+    public void testSearchForgetUserId(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchForgetUserId();
+    }
+    @Test
+    public void testSearchForgotPassword(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchForgotPassword();
+    }
+    @Test
+    public void testSearchActivateCard(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchActivateCard();
+    }
+    @Test
+    public void testSearchRegisterForOnlineAccess(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchRegisterForOnlineAccess();
+    }
+    @Test
+    public void testSearchWhyCiti(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchWhyCiti();
+    }
+    @Test
+    public void testSearchOurStory(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchOurStory();
+    }
+    @Test
+    public void testSearchCareers(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchCareers();
+    }
+    @Test
+    public void testSearchBenifitsAndServices(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchBenifitsAndServices();
+    }
+    @Test
+    public void testSearchRewards(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchRewards();
+    }
+    @Test
+    public void testSearchCitiEasyDeals(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchCitiEasyDeals();
+    }
+    @Test
+    public void testSearchCitiPrivatePass(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchCitiPrivatePass();
+    }
+    @Test
+    public void testSearchSpecialOffer(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        mainPage.checkSearchSpecialOffer();
+    }
 
 }

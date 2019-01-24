@@ -23,8 +23,6 @@ public class MainPage extends BaseUtil{
     public static WebElement selectState;
     @FindBy(xpath = "//button[@class='btn btn-primary select-btn__e-2']")
     public static WebElement selectButton;
-
-
     @FindBy (xpath = "//a[@href='https://www.citi.com/credit-cards/citi.action']")
     public static WebElement searchCreditCards;
     @FindBy(xpath = "//*[@id='creditCards']")
@@ -58,18 +56,13 @@ public class MainPage extends BaseUtil{
     @FindBy(xpath ="//*[@id=\"whyCiti\"]/ul/li[3]/a")
     public static WebElement searchBenifitsAndServices;
     @FindBy(xpath = "//*[@id=\"whyCiti\"]/ul/li[4]/a")
-    public static WebElement searchrewards;
+    public static WebElement searchRewards;
     @FindBy(xpath = "//*[@id=\"whyCiti\"]/ul/li[5]/a")
     public static WebElement searchCitiEasyDeals;
     @FindBy(xpath = "//*[@id=\"whyCiti\"]/ul/li[6]/a")
     public static WebElement searchCitiPrivatePass;
     @FindBy(xpath = "//*[@id=\"whyCiti\"]/ul/li[7]/a")
     public static WebElement searchSpecialOffer;
-
-   // @FindBy(xpath = "//*[@class='hero-xs-background']")
-   // public static WebElement searchHeroBackground;
-//    @FindBy(xpath ="//a[@href='https://banking.citi.com/cbol/18/Q4/split/nt/default.htm?channel=onsite&intc=1~1~52~6~BANR~2~Q119Save_PROS~XPX']")
-//    public static WebElement searchLearnMoreSavingAccount;
 
     public void checkSearchCitiLogo() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -111,9 +104,6 @@ public class MainPage extends BaseUtil{
         }.getClass().getEnclosingMethod().getName()));
         selectButton.click();
     }
-
-
-
     public void checkSearchCreditcards() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
@@ -129,7 +119,7 @@ public class MainPage extends BaseUtil{
         }.getClass().getEnclosingMethod().getName()));
         searchInvesting.click();
     }
-    public void checkSearchCitigolg(){
+    public void checkSearchCitigold () {
         TestLogger.log(getClass().getSimpleName() +": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
         searchCitigold.click();
@@ -197,10 +187,10 @@ public class MainPage extends BaseUtil{
         }.getClass().getEnclosingMethod().getName()));
         searchBenifitsAndServices.click();
     }
-    public void checkSearchrewards(){
+    public void checkSearchRewards(){
         TestLogger.log(getClass().getSimpleName() +": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        searchrewards.click();
+        searchRewards.click();
     }
     public void checkSearchCitiEasyDeals(){
         TestLogger.log(getClass().getSimpleName() +": " + convertToString(new Object() {
@@ -217,34 +207,4 @@ public class MainPage extends BaseUtil{
         }.getClass().getEnclosingMethod().getName()));
         searchSpecialOffer.click();
     }
-//    public void checkSearchCitigolg(){
-//        TestLogger.log(getClass().getSimpleName() +": " + convertToString(new Object() {
-//        }.getClass().getEnclosingMethod().getName()));
-//        searchCitigold.click();
-//    }
-//    public void checkSearchCitigolg(){
-//        TestLogger.log(getClass().getSimpleName() +": " + convertToString(new Object() {
-//        }.getClass().getEnclosingMethod().getName()));
-//        searchCitigold.click();
-//    }
-//    public void checkSearchCitigolg(){
-//        TestLogger.log(getClass().getSimpleName() +": " + convertToString(new Object() {
-//        }.getClass().getEnclosingMethod().getName()));
-//        searchCitigold.click();
-//    }
-//    public void checkSearchCitigolg(){
-//        TestLogger.log(getClass().getSimpleName() +": " + convertToString(new Object() {
-//        }.getClass().getEnclosingMethod().getName()));
-//        searchCitigold.click();
-//    }
-//    public void checkSearchHeroBackground(){
-//        TestLogger.log(getClass().getSimpleName() +": " + convertToString(new Object() {
-//        }.getClass().getEnclosingMethod().getName()));
-//        searchHeroBackground.click();
-//    }
-//    public void checkSearchLearnMoreSavingAccount(){
-//        TestLogger.log(getClass().getSimpleName() +": " + convertToString(new Object() {
-//        }.getClass().getEnclosingMethod().getName()));
-//        searchLearnMoreSavingAccount.click();
-//    }
 }
