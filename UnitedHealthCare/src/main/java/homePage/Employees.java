@@ -86,6 +86,5 @@ public class Employees extends CommonAPI {
         enterBrokerName.sendKeys("Gold Smith");
         enterBrokerAgencyName.sendKeys("ABCD");
         enterAdditionalInformation.sendKeys("He does not have antything");
-        //clickSubmitButton.click();
    }
 }
