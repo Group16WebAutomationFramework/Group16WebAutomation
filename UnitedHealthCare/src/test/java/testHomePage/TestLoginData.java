@@ -20,5 +20,4 @@ public class TestLoginData extends LoginData {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         logindata.enterUserNameandPassword();
     }
-
 }

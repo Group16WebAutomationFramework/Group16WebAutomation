@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import reporting.TestLogger;
 
 public class LoginData extends CommonAPI {
+//    @FindBy(xpath ="//button[@id='loginmenubutton']" )
+//    public static WebElement loginButton;
     @FindBy(css = "input[id=hsid-username]")
     public static WebElement enterUserName;
     @FindBy(xpath = "//input[@id='hsid-password']")
